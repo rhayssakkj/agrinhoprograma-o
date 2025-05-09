@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Tom de fundo claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8bc34a; /* Verde que remete ao campo */
+    color: white;
+    padding: 2em 1em;
+    text-align: center;
+    border-bottom: 5px solid #689f38; /* Verde mais escuro para destaque */
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+main {
+    padding: 2em;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3em;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.introducao {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.imagem-destaque {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-destaque img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.texto-introducao {
+    flex: 2;
+}
+
+.topicos-conexao {
+    margin-top: 2em;
+}
+
+.topico {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.topico.reversa {
+    flex-direction: row-reverse;
+}
+
+.imagem-topico {
+    flex: 1;
+    max-width: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-topico img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.texto-topico {
+    flex: 2;
+}
+
+.texto-topico h3 {
+    color: #689f38; /* Verde mais escuro para os títulos dos tópicos */
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .introducao, .topico {
+        flex-direction: column;
+    }
+
+    .topico.reversa {
+        flex-direction: column;
+    }
+
+    .imagem-destaque, .imagem-topico {
+        width: 100%;
+        max-width: none;
+    }
+}
